@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100&family=Dancing+Script:wght@400;500;600&family=Playfair+Display:ital@1&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto:ital@1&display=swap');
+#app { height: 100% }
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  overflow: auto;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.mySwiper
+{
+    background-size: 100% 100%;
+}
+.swiper-button-prev::after
+{
+  content:"";
+  color:white;
+  border-radius: 50%;
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+  padding: 5px 12px 5px 8px;
+}
+
+.swiper-button-next::after
+{
+  content:"";
+  color:white;
+  border-radius: 50%;
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+  padding: 5px 12px 5px 8px;
+}
+
+.myInp  input
+{
+  /* border-radius: 20%; */
+  font-size: 25px;
+  /* color: rgb(185, 128, 54); */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+import React, { useState } from "react";
+import 'react-date-range/dist/styles.css'; // main css file
+import 'react-date-range/dist/theme/default.css'; // theme css file
+import Datepicker from "react-tailwindcss-datepicker";
+import { DateRangePicker } from 'react-date-range';
+import { addDays } from 'date-fns';
+export default function BookingBar() {
+    const [value, setValue] = useState({
+        startDate: new Date(),
+        endDate: new Date().setDate(6)
+    });
+    const handleValueChange = (newValue) => {
+        console.log("newValue:", newValue);
+        setValue(newValue);
+    }
+      console.log(value,"my dates")
+    return (
+        <>
+            <div className="flex  justify-center relative border border-red-500 bg-white  md:h-32 w-full z-10">
+                <div className="bg-white border border-yellow-500 w-3/4 h-28 absolute top-[-60px] ">
+                <Datepicker
+                    value={value}
+                    onChange={handleValueChange}  
+                    primaryColor="amber"
+                    className="newClass flex flex-col"
+                    showFooter={true}
+                    separator="to"
+                    
+                />
+                </div>
+
+            </div>
+
+        </>
+    )
+}
+**/
